@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #F4F4F4;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+            padding: 0 40px;
+            background-color: #007BFF;
+            /* Niebieskie tło dla nawigacji */
+        }
+
+        nav h2 {
+            color: #FFFFFF;
+            /* Biały kolor dla nagłówka */
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #FFFFFF;
+            /* Biały kolor dla linków */
+            font-size: 16px;
+            font-weight: 600;
+            margin-right: 25px;
+            transition: color 0.2s ease;
+        }
+
+        nav ul li:hover a {
+            color: #FFD700;
+            /* Złoty kolor przy najechaniu */
+        }
+
+        main {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1.animated-title span {
+            animation: appear 0.5s forwards;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: scale(0.2);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .highlight {
+            color: #007BFF;
+            /* Niebieski kolor tekstu dla wyróżnionych spany */
+        }
+
+        .category {
+            font-weight: bold;
+            color: #007BFF;
+            /* Niebieski kolor dla kategorii */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav">
+        <h2>Bubliks</h2>
+        <ul>
+            <li><a href="index.html">Back to home</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <h1 class="animated-title">
+            <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span>
+            <span>m</span><span>e</span>
+        </h1>
+
+        <h2>Hello, my name is <span class="highlight">Jakub</span>, I am a beginner programmer.</h2>
+
+        <p>I only know the most popular languages for creating websites and several backend languages such as:</p>
+
+        <div class="category">Languages I Know Well:</div>
+        <p>
+            <span class="highlight">- HTML</span> <br>
+            <span class="highlight">- CSS</span> <br>
+            <span class="highlight">- JavaScript</span> <br>
+            <span class="highlight">- Python (flask)</span> <br>
+        </p>
+
+        <div class="category">Additional Languages:</div>
+        <p>
+            <span>- mySQL (basics)</span> <br>
+            <span>- PHP (a little)</span> <br>
+            <span>- C# (basics)</span> <br>
+        </p>
+
+        <p>
+            I mainly program websites. I'm trying to create my first game in Unity, but I don't know much C# to do it.
+        </p>
+
+        <p>
+            I have recently started riding a motorcycle, am very excited about it and am currently in the process of
+            purchasing a second one. <br>
+            I ride motocross bikes with my friends and we have a lot of fun doing it. <br>
+            I started learning MySQL and PHP very intensively, because next year I will take a professional exam in
+            these languages, so they will be very useful to me.
+        </p>
+    </main>
+</body>
+
+</html>
